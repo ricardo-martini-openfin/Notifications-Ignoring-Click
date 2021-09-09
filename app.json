@@ -1,0 +1,83 @@
+{
+    "runtime": {
+        "arguments": "--v=1 --inspect --security-realm=Excel-Test --enable-mesh",
+        "version": "stable"
+    },
+    "shortcut": {
+        "company": "OpenFin",
+        "description": "Platform app seed hosted",
+        "icon": "https://openfin.github.io/golden-prototype/favicon.ico",
+        "name": "Platform app seed hosted"
+    },
+    "platform": {
+        "uuid": "platform_customization_hosted",
+        "applicationIcon": "https://openfin.github.io/golden-prototype/favicon.ico",
+        "autoShow": false,
+        "defaultViewOptions": {
+            "accelerator": {
+                "zoom": true
+            }
+        },
+        "providerUrl": "https://openfin.github.io/platform-api-project-seed/provider.html",
+        "permissions": {
+            "ExternalWindow": {
+                "wrap": true
+            },
+            "System": {
+                "getAllExternalWindows": true,
+                "launchExternalProcess": true,
+                "readRegistryValue": false,
+                "terminateExternalProcess": true
+            }
+        },
+        "defaultWindowOptions": {
+            "url": "https://openfin.github.io/platform-api-project-seed/platform-window.html",
+            "contextMenu": true,
+            "defaultWidth": 600,
+            "defaultHeight": 600,
+            "defaultLeft": 0,
+            "defaultTop": 0,
+            "saveWindowState": false,
+            "backgroundThrottling": true,
+            "minHeight": 445,
+            "minWidth": 308,
+            "showBackgroundImages": true
+        },
+        "defaultViewOptions" : {
+            "isClosable": true,
+            "preventDragOut": true
+        },
+        "commands": [
+            {
+                "command": "stack.nextTab",
+                "keys": "Ctrl+Tab"
+            }
+        ]
+    },
+    "snapshot": {
+        "windows": [
+            {
+                "layout": {
+                   
+                        "content": [
+                            {
+                                "type": "stack",
+                                "id": "no-drop-target",
+                                "content": [
+                                    {
+                                        "type": "component",
+                                        "componentName": "view",
+                                        "componentState": {
+                                            "name": "component_A1",
+                                            "processAffinity": "ps_1",
+                                            "url": "http://localhost:3000/index.html"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }

@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@types/openfin": "latest",
+    "hadouken-js-adapter": "latest",
+    "http-server": "^0.12.3",
+    "openfin-notifications": "^1.9.1"
+  }
+}
